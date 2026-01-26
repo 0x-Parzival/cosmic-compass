@@ -60,10 +60,10 @@ const QuizQuestion1 = ({ onAnswer }: QuizQuestion1Props) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <span className="font-orbitron text-xs sm:text-sm text-muted-foreground uppercase tracking-widest">
+            <span className="font-orbitron text-xs sm:text-sm lg:text-base xl:text-lg text-muted-foreground uppercase tracking-widest">
               Question 1 of 4
             </span>
-            <h1 className="font-orbitron text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-foreground mt-2">
+            <h1 className="font-orbitron text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl font-bold text-foreground mt-2">
               To which text do you{" "}
               <span className="text-neon-cyan text-glow-cyan">relate</span> to most?
             </h1>
