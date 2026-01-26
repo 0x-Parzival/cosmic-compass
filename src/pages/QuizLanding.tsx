@@ -31,16 +31,16 @@ const QuizLanding = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="font-orbitron text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-glow-purple mb-2 sm:mb-4">
+            <h1 className="font-orbitron text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-black text-glow-purple mb-2 sm:mb-4">
               <span className="text-primary">SPIRITUAL</span>{" "}
               <span className="text-secondary">AI</span>
             </h1>
-            <div className="h-[2px] w-32 sm:w-48 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent mb-4 sm:mb-8" />
+            <div className="h-[2px] w-32 sm:w-48 lg:w-64 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent mb-4 sm:mb-8" />
           </motion.div>
 
           {/* Subtitle */}
           <motion.p
-            className="font-exo text-base sm:text-lg md:text-xl text-foreground/80 mb-4 sm:mb-6 px-4"
+            className="font-exo text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-foreground/80 mb-4 sm:mb-6 px-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -61,7 +61,7 @@ const QuizLanding = () => {
               "ESTP", "ESFP", "ENFP", "ENTP", "ESTJ", "ESFJ", "ENFJ", "ENTJ"].map((type, i) => (
               <span
                 key={type}
-                className="text-[10px] sm:text-xs font-orbitron text-muted-foreground/60 px-1.5 py-0.5 sm:px-2 sm:py-1 border border-border/30 rounded"
+                className="text-[10px] sm:text-xs lg:text-sm xl:text-base font-orbitron text-muted-foreground/60 px-1.5 py-0.5 sm:px-2 sm:py-1 lg:px-3 lg:py-1.5 border border-border/30 rounded"
               >
                 {type}
               </span>

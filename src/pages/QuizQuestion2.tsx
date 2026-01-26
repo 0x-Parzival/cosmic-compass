@@ -60,10 +60,10 @@ const QuizQuestion2 = ({ onAnswer }: QuizQuestion2Props) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <span className="font-orbitron text-xs sm:text-sm text-muted-foreground uppercase tracking-widest">
+            <span className="font-orbitron text-xs sm:text-sm lg:text-base xl:text-lg text-muted-foreground uppercase tracking-widest">
               Question 2 of 4
             </span>
-            <h1 className="font-orbitron text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-foreground mt-2">
+            <h1 className="font-orbitron text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl font-bold text-foreground mt-2">
               How do you{" "}
               <span className="text-secondary text-glow-cyan">perceive</span> the world?
             </h1>
