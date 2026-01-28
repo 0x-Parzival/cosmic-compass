@@ -52,7 +52,7 @@ const QuizOption = ({
         >
           {title}
         </h3>
-        <p className="text-foreground/80 text-xs sm:text-sm lg:text-base xl:text-lg leading-relaxed">
+        <p className="text-foreground/80 text-xs sm:text-sm lg:text-base xl:text-lg leading-relaxed line-clamp-4 sm:line-clamp-none">
           {description}
         </p>
       </div>

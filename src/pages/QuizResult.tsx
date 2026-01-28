@@ -227,10 +227,10 @@ const QuizResult = () => {
             >
               <NeonButton
                 variant="secondary"
-                onClick={() => window.location.href = `/MBTI/personality/${mbtiType.toLowerCase()}.html`}
+                onClick={() => navigate("/quiz")}
                 className="backdrop-blur-sm bg-white/5 border-white/30 hover:bg-white/10"
               >
-                continue
+                Retake Quiz
               </NeonButton>
             </motion.div>
           </div>
