@@ -18,7 +18,7 @@ const QuizLanding = () => {
 
       <div className="relative h-full w-full flex items-center justify-center p-4 sm:p-6 overflow-hidden">
         <SciFiBackground variant="landing" />
-        
+
         <motion.div
           className="relative z-10 text-center max-w-2xl mx-auto"
           initial={{ opacity: 0 }}
@@ -30,13 +30,18 @@ const QuizLanding = () => {
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex justify-center"
           >
-            <h1 className="font-orbitron text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-black text-glow-purple mb-2 sm:mb-4">
-              <span className="text-primary">SPIRITUAL</span>{" "}
-              <span className="text-secondary">AI</span>
-            </h1>
-            <div className="h-[2px] w-32 sm:w-48 lg:w-64 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent mb-4 sm:mb-8" />
+            <div className="neon-wave-title">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black">
+                SPIRITUAL AI
+              </h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black" aria-hidden="true">
+                SPIRITUAL AI
+              </h1>
+            </div>
           </motion.div>
+          <div className="h-[2px] w-32 sm:w-48 lg:w-64 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent mb-4 sm:mb-8 mt-2 sm:mt-4" />
 
           {/* Subtitle */}
           <motion.p
@@ -57,15 +62,15 @@ const QuizLanding = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-            {["ISTJ", "ISFJ", "INFJ", "INTJ", "ISTP", "ISFP", "INFP", "INTP", 
+            {["ISTJ", "ISFJ", "INFJ", "INTJ", "ISTP", "ISFP", "INFP", "INTP",
               "ESTP", "ESFP", "ENFP", "ENTP", "ESTJ", "ESFJ", "ENFJ", "ENTJ"].map((type, i) => (
-              <span
-                key={type}
-                className="text-[10px] sm:text-xs lg:text-sm xl:text-base font-orbitron text-muted-foreground/60 px-1.5 py-0.5 sm:px-2 sm:py-1 lg:px-3 lg:py-1.5 border border-border/30 rounded"
-              >
-                {type}
-              </span>
-            ))}
+                <span
+                  key={type}
+                  className="text-[10px] sm:text-xs lg:text-sm xl:text-base font-orbitron text-muted-foreground/60 px-1.5 py-0.5 sm:px-2 sm:py-1 lg:px-3 lg:py-1.5 border border-border/30 rounded"
+                >
+                  {type}
+                </span>
+              ))}
           </motion.div>
 
           {/* Start Button */}
